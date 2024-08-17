@@ -189,7 +189,7 @@ class OutlierHandler:
         return self.transform(df, columns)
 
 
-# data_loader = DataLoader('DB_URL')
+# data_loader = DataLoader('postgresql://postgres:ayushsingh@localhost:5432/cs001')
 # data_loader.load_data('retail_prices')
 # df = data_loader.get_data()
 # encoder = CategoricalEncoder(method="onehot")

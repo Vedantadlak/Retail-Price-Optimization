@@ -20,7 +20,7 @@ def ingest(
         data: pd.DataFrame
     """
     try:
-        data_loader = DataLoader('DB_URL')
+        data_loader = DataLoader('postgresql://postgres:ayushsingh@localhost:5432/cs001')
         data_loader.load_data(table_name) 
         df = data_loader.get_data()  
         if for_predict:

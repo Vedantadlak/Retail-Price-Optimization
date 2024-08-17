@@ -191,7 +191,7 @@ class InteractionEffects:
         return self.data
 
 if __name__ == "__main__": 
-    # df = pd.read_csv("/Users/vedantadlak/Desktop/MLProjectPackages/retail-price-optimization/data/retail_prices_encoded_date.csv") 
+    # df = pd.read_csv("/Users/ayushsingh/Desktop/MLProjectPackages/retail-price-optimization/data/retail_prices_encoded_date.csv") 
     # df.drop(["month_year", "id"], axis=1, inplace=True)
     # X = df.drop(["qty"], axis=1) 
     # y = df["qty"]
@@ -206,7 +206,7 @@ if __name__ == "__main__":
     # X_train_significant = X_train[predictors] 
     # lr_model_2 = LinearRegressionModel(X_train_significant, y_train) 
     # df_with_sig_vars = pd.concat([X_train_significant, y_train], axis=1) 
-    # df_with_sig_vars.to_csv("/Users/vedantadlak/Desktop/MLProjectPackages/retail-price-optimization/data/retail_prices_encoded_date_sig_vars.csv", index=False) 
+    # df_with_sig_vars.to_csv("/Users/ayushsingh/Desktop/MLProjectPackages/retail-price-optimization/data/retail_prices_encoded_date_sig_vars.csv", index=False) 
     # model = lr_model_2.train() 
     # print(model.summary())
 

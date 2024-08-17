@@ -40,7 +40,7 @@ from index import RetailPriceProcessed, RetailPrices, Session
 
 
 with Session.begin() as db: 
-    data = pd.read_csv("/Users/vedantadlak/Desktop/MLProjectPackages/retail-price-optimization/data/df_with_significant_vars.csv") 
+    data = pd.read_csv("/Users/ayushsingh/Desktop/MLProjectPackages/retail-price-optimization/data/df_with_significant_vars.csv") 
     print(data)
     for index, row in data.iterrows():
         print(row)

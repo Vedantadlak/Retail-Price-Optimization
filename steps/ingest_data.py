@@ -9,7 +9,7 @@ from zenml import step
 from steps.src.data_loader import DataLoader
 
 
-@step()
+@step(enable_cache=False)
 def ingest(
     table_name: str , 
     for_predict: bool = False,
@@ -24,7 +24,8 @@ def ingest(
         data_loader.load_data(table_name) 
         df = data_loader.get_data()  
         if for_predict:
-            df.drop(columns=["qty"], inplace=True)
+            df.drop(columns=["qty"], inplace=True) 
+        print(df.head())
         logging.info("Data loaded successfully")
         return df  
     except Exception as e:
